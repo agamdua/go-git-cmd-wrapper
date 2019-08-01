@@ -92,6 +92,11 @@ func Worktree(options ...types.Option) (string, error) {
 	return command("worktree", options...)
 }
 
+// Log https://git-scm.com/docs/git-log
+func Log(options ...types.Option) (string, error) {
+	return command("log", options...)
+}
+
 // Raw use to execute arbitrary commands.
 func Raw(cmd string, options ...types.Option) (string, error) {
 	return command(cmd, options...)

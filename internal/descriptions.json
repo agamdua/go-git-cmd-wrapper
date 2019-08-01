@@ -1807,6 +1807,22 @@
     ]
   },
   {
+    "command_name": "log",
+    "enabled": true,
+    "options": [
+      {
+        "argument": "--max-count=<number>",
+        "arguments": "-<number>, -n <number>, --max-count=<number>",
+        "description": "Limit the number of commits to output."
+      },
+      {
+        "argument": "--pretty[=<format>]",
+        "arguments": "--pretty[=<format>], --format=<format>",
+        "description": "Pretty-print the contents of the commit logs in a given format, where <format> can be one of oneline, short, medium, full, fuller, email, raw, format:<string> and tformat:<string>. When <format> is none of the above, and has %placeholder in it, it acts as if --pretty=tformat:<format> were given.\n\n See the \"PRETTY FORMATS\" section for some additional details for each format. When =<format> part is omitted, it defaults to medium.\n\n Note: you can specify the default pretty format in the repository configuration (see git-config(1))."
+      }
+    ]
+  },
+  {
     "command_name": "",
     "enabled": false,
     "options": [
